@@ -194,6 +194,29 @@ Please note that this is a simplified representation, and additional attributes 
 
 
 
++---------------------+           +------------------+           +----------------+
+|       Projects      |           |     Users        |           |    Tasks       |
++---------------------+           +------------------+           +----------------+
+|   ProjectID         |           |   UserID         |           |   TaskID       |
+|   ProjectName       |           |   UserName       |           |   TaskName     |
+|   Description       |           |   Email          |           |   Description  |
+|   StartDate         |           +------------------+           |   Status       |
+|   EndDate           |                    |                   |   Priority     |
+|   Status            |                    |                   |   DueDate      |
++---------------------+                    |                   |   ProjectID    |
+                                          |                   |   UserID       |
+                                          |                   +----------------+
+                      +--------------------------------+
+                      |          Assignments           |
+                      +--------------------------------+
+                      |   AssignmentID                 |
+                      |   TaskID                       |
+                      |   UserID                       |
+                      |   AssignedDate                 |
+                      |   CompletedDate                |
+                      +--------------------------------+
+
+
 
 
 User
